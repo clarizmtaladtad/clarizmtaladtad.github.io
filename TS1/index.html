@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clariz Taladtad Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="theme-wrapper">
+        <input type="checkbox" class="theme-checkbox" id="theme-toggle">
+        <label for="theme-toggle">Dark Mode</label>
+    </div>
+
+    <table align="center">
+        <tr>
+            <td>
+                <img class="profile-pic" src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t1.15752-9/476500620_1400325507622620_1811610406100407472_n.png?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Q_yjaK8BALkQ7kNvgEJVMqj&_nc_oc=Adi8OREMXV7HBaVoiaC1789XsOBSn0cnD6YahPLtANJuIzb8Oya-OCbohgNBiaaSug0&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&oh=03_Q7cD1gEMtfwAQrnS90KnUJ_AaEGAVBjz6eg8bDYFa5bUOmEAmw&oe=67CD7215">
+            </td>
+            <td colspan="2">
+                <p class="name"><b>Clariz Margaret R. Taladtad</b></p>
+                <p class="title">Web Designer & Developer</p>
+            </td>
+        </tr>
+
+    <tr>
+        <td class="left-section">
+            <div class="section">
+                <h3>Contact</h3>
+                <div class="underline"></div>
+                <div class="info">
+
+                    <table>
+                        <tr>
+                            <td><img class="icon" src="https://i.pinimg.com/736x/0c/5b/f6/0c5bf687db94b121504d1834ac50e898.jpg"></td>
+                            <td><p>+639605022706</p></td>
+                        </tr>
+                        <tr>
+                            <td><img class="icon" src="https://i.pinimg.com/736x/41/89/0b/41890b52d491f44078f86ea7b5268ba5.jpg"></td>
+                            <td><p>Clariz Taladtad</p></td>
+                        </tr>
+                        <tr>
+                            <td><img class="icon" src="https://i.pinimg.com/564x/1e/f3/e6/1ef3e6e05706ece71fe73f4c5935f615.jpg"></td>
+                            <td><p>@clariztaladtad</p></td>
+                        </tr>
+                        <tr>
+                            <td><img class="icon" src="https://i.pinimg.com/originals/58/03/47/580347d6ed1dc74854b1c36b5ece38e4.jpg"></td>
+                            <td><p>@clariztaladtad</p></td>
+                        </tr>
+                    </table>
+
+                    <h3>About Me</h3>
+                    <div class="underline"></div>
+                    <p>
+                        <b>Name:</b> Clariz Margaret R. Taladtad<br>
+                        <b>Age:</b> 24<br>
+                        <b>Gender:</b> Female<br>
+                        <b>Nationality:</b> Filipino<br>
+                        <b>Location:</b> Philippines<br>
+                    </p>
+                </div>
+                </div>
+            </div>
+        </td>
+
+        <td class="middle-section">
+            <img class="vertical-divider" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Black.png/220px-Black.png">
+        </td>
+
+        <td class="right-section">
+            <div class="section">
+                <h3>Education</h3>
+                <div class="underline"></div>
+                <p>
+                    <b>Bachelor's Degree in Information Technology</b><br>
+                    2018 - 2024 FEU Institute of Technology<br><br>
+                    <b>Master in Software Engineering</b><br>
+                    2025 - 2028 Massachusetts Institute of Technology
+                </p>
+                    <h3>Projects</h3>
+                    <div class="underline"></div>
+                    <ul>
+                        <li>Valorant</li>
+                        <li>Riot Games</li>
+                        <li>Genshin Impact</li>
+                        <li>Discord Security System</li>
+                        <li>Dior Website</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>Skills</h3>
+                    <div class="underline"></div>
+                    <ul>
+                        <li>Game Developing</li>
+                        <li>Web Design</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Python</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+            </div>
+        </td>
+
+    </tr>
+        <td colspan="3">
+            <img class="footer-img" src="https://i.pinimg.com/736x/20/f4/2f/20f42fc424591d0051d1927983389226.jpg">
+        </td>
+    </tr>
+    
+</div>
+</table>
+
+<script>
+    const checkbox = document.getElementById("theme-toggle");
+    checkbox.addEventListener("change", () => {
+        if (checkbox.checked) {
+            document.body.classList.add("dark-mode");
+        } else {
+            document.body.classList.remove("dark-mode");
+        }
+    });
+</script>
+
+
+</body>
+</html>
