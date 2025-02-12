@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekday Highlighter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button class="button">Monday</button>
+        <button class="button">Tuesday</button>
+        <button class="button">Wednesday</button>
+        <button class="button">Thursday</button>
+        <button class="button">Friday</button>
+        <button class="button">Saturday</button>
+        <button class="button">Sunday</button>
+    </div>
+    <div id="highlight-box"></div>
+
+    <script>
+        const highlightBox = document.getElementById('highlight-box');
+        const buttons = document.querySelectorAll('.button');
+        const colors = ['#72A0C1', '#a71930', '#87A96B', '#F0E68C', '#DDA0DD', '#F29F58', '#FFC0CB'];
+        
+        let isFirstClick = true;
+
+        function animateBox(color) {
+            highlightBox.style.opacity = 0;
+            highlightBox.style.top = '-200px';
+
+            setTimeout(() => {
+                highlightBox.style.visibility = 'visible';
+                highlightBox.style.borderColor = color;
+                highlightBox.style.opacity = 1;
+                highlightBox.style.top = '-10px';
+            }, isFirstClick ? 100 : 900);
+            
+            isFirstClick = false;
+        }
+
+        buttons.forEach((btn, idx) => {
+            btn.addEventListener('click', () => animateBox(colors[idx]));
+        });
+    </script>
+</body>
+</html>
