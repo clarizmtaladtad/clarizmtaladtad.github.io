@@ -6,6 +6,7 @@ body {
 .text-center{
     font-weight: bold;
 }
+
 .headings {
     color: white;
     font-weight: 600;
@@ -18,7 +19,7 @@ body {
 
 
 .card-body {
-    width: 600px;
+    width: 500px;
     height: auto; 
     padding: 50px; 
     margin: 10px; 
@@ -81,7 +82,7 @@ body {
     width: 100%;
     padding: 10px;
     transform: translateY(100%);
-    transition: transform 0.3s;
+    transition: transform 0.8s;
     text-align: center;
 }
 
