@@ -82,7 +82,7 @@ body {
     width: 100%;
     padding: 10px;
     transform: translateY(100%);
-    transition: transform 0.8s;
+    transition: transform 0.9s;
     text-align: center;
 }
 
